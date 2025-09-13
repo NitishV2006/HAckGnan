@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     host: "::",
     port: 8080,
-    allowedHosts: ["hackgnan.onrender.com"], // ✅ allow your Render domain
+    allowedHosts: ["https://hackgnan.onrender.com"], // ✅ allow your Render domain
   },
   plugins: [react()],
   resolve: {
