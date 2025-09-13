@@ -2,12 +2,12 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  base: "./", // ✅ ensures assets load correctly
   server: {
-    host: "0.0.0.0", // ensures it runs on all network interfaces
+    host: "0.0.0.0",
     port: 8080,
-    allowedHosts: ["hackgnan.onrender.com"], // ✅ allow your custom domain
+    allowedHosts: ["hackgnan.onrender.com"],
   },
   plugins: [react()],
   resolve: {
