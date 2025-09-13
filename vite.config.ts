@@ -5,9 +5,9 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    host: "::",
+    host: "0.0.0.0", // ensures it runs on all network interfaces
     port: 8080,
-    allowedHosts: ["https://hackgnan.onrender.com"], // ✅ allow your Render domain
+    allowedHosts: ["hackgnan.onrender.com"], // ✅ allow your custom domain
   },
   plugins: [react()],
   resolve: {
