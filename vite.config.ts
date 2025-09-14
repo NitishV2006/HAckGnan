@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 8080,
-    allowedHosts: ["hackgnan.onrender.com"],
+    allowedHosts: ["https://hackgnan-1.onrender.com"],
   },
   preview: {
     port: 8080,
